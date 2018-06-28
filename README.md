@@ -17,6 +17,14 @@ The work we've done here allows us to keep the best parts of spring, and grab th
     ```
 * You should get a successful build message
 
+## Bundling for Deploy
+
+From the parent directory run the following:
+
+    ```
+    sudo mvn package
+    ```
+The bundled file you'll find in the parent/bundle/target directory is your bundled application, front and back end. 
 
 ## Running in Development Mode
 
@@ -50,7 +58,7 @@ To start the front end, make sure your terminal is navigated to the front end fo
 
 You'll see your modules compile and you'll be all set.
 
-To start our backend, you can use whichever IDE you prefer to write your JAVA. If you're like me and can't stand eclipse and won't be changing much on the backend, you can start the application via the terminal. Navigate to the parent/bundle/target folder and run the following command
+To start our backend, you can use whichever IDE you prefer to write your JAVA. If you're like me and can't stand eclipse and won't be changing much on the backend, you can start the application via the terminal after you've bundled. Navigate to the parent/bundle/target folder and run the following command
 
 ```
     sudo java -jar YOURBUNDLENAME-SNAPSHOT-repackaged.jar
