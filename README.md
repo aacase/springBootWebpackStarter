@@ -66,4 +66,20 @@ To start our backend, you can use whichever IDE you prefer to write your JAVA. I
 
 Your bundle name can be whatever you want. You can change in in the Bundle's pom.xml file. 
 
+## Front End Testing
+
+Karma has been included with the project. You'll want to install karma-cli to use the test suite via the command line.
+```
+    npm install -g karma-cli
+```
+
+ All tests can be placed in the test folder. The testEntry.js file will search for them and compile them. To run the test suite, navigate to the front end folder in your terminal and run 
+```
+    karma start
+```
+This will start and run all tests in the project. It will also listen for changes in the whole project and run tests on save. Hello Regression Testing!
+
+Note that when you're running this in dev full on, you'll have at least 2, possibly 3 terminal windows running (wepack hot reload on the front end, karma for tests, and optionally the backend if you aren't running a server via an IDE)
+
+
 That's it! Happy developing
