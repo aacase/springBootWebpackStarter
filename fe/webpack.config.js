@@ -8,7 +8,6 @@ const PATHS = {
 
 module.exports = {
   entry: './app/index.js',
-
   output: {
     path: PATHS.build,
     publicPath: '/assets/',
@@ -17,18 +16,11 @@ module.exports = {
   devServer: {
     port: 9192,
     proxy: {
-
       //route dev-server which is on 8080 requests to the 3000 where backend server runs
-
       '/api/*': {
-
         target: 'http://localhost:8080',
-
         secure: false
-
       }
-
     }
-
   }
 };

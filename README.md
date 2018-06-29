@@ -53,7 +53,7 @@ We can make the port whatever we want, but it's important that it's not the same
 To start the front end, make sure your terminal is navigated to the front end folder of the project
 
 ```
-    webpack-dev-server --inline --hot
+    npm start
 ```
 
 You'll see your modules compile and you'll be all set.
