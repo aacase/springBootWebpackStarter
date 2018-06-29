@@ -7,7 +7,7 @@ const PATHS = {
 };
 
 module.exports = {
-  entry: './app/index.js',
+  entry: './webPackEntry.js',
   output: {
     path: PATHS.build,
     publicPath: '/assets/',
