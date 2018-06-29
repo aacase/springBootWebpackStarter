@@ -5,7 +5,8 @@
   "main": "./app",
   "scripts": {
     "build": "webpack -p",
-    "start": "webpack-dev-server --inline --hot"
+    "start": "webpack-dev-server --inline --hot",
+    "dev": "webpack-dev-server --inline --hot --mode development"
   },
   "author": "",
   "license": "ISC",
